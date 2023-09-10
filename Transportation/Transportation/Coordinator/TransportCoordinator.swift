@@ -10,6 +10,8 @@ import UIKit
 
 enum TransportNavigationAction {
     case trainIdentifierTapped(String)
+    case backButtonTapped
+    case error(String)
 }
 
 protocol TransportNavigationFlowHandler: AnyObject {
@@ -19,8 +21,8 @@ protocol TransportNavigationFlowHandler: AnyObject {
 final class TransportCoordinator: Coordinator, TransportNavigationFlowHandler {
     private let apiHandler = TubeInformationAPIContext()
     
-    weak var parentCoordinator: Coordinator?
-    var childCoordinators = [Coordinator]()
+    var parentCoordinator: Coordinator?
+    var childCoordinators: [Coordinator] = []
     internal var rootNavigationController: UINavigationController
     
     init(rootNavigationController: UINavigationController,
@@ -38,7 +40,21 @@ final class TransportCoordinator: Coordinator, TransportNavigationFlowHandler {
         let viewController = TrainListViewController(viewModel: model)
         rootNavigationController.pushViewController(viewController, animated: false)
     }
-     
+    
+    func showTrainInformationScreen(lineId: String) {
+        let viewModel = StationListViewModel(apiHandler: apiHandler, lineId: lineId, navigationDelegate: self)
+        let viewController = StationListViewController(viewModel: viewModel)
+        rootNavigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func showAlertScreen(_ message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
+            self?.rootNavigationController.popViewController(animated: true)
+        }))
+        rootNavigationController.topViewController?.present(alert, animated: true, completion: nil)
+    }
+    
     func stop() {
         parentCoordinator?.stop()
     }
@@ -46,7 +62,11 @@ final class TransportCoordinator: Coordinator, TransportNavigationFlowHandler {
     func handleNavigationAction(_ action: TransportNavigationAction) {
         switch action {
         case let .trainIdentifierTapped(lineId):
-            #warning("Move to station list scren")
+            showTrainInformationScreen(lineId: lineId)
+        case .backButtonTapped:
+            rootNavigationController.popViewController(animated: true)
+        case let .error(message):
+            showAlertScreen(message)
         }
     }
 }

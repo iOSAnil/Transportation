@@ -9,6 +9,23 @@ import Foundation
 import Alamofire
 
 final class TubeInformationAPIContext: TubeInformationAPIHandler {
+    func fetchTrainStationInformation(lineId: String, completion: @escaping (Result<StationModel, TransportForLondonError>) -> Void) {
+        let url = TransportForLondonAPI.routeInformation(lineId: lineId).url
+        let request = AF.request(url)
+        
+        request.responseDecodable(of: StationModel.self) { response in
+            switch response.result {
+            case let .success(model):
+                guard let message = model.message else {
+                    completion(.success(model))
+                    return
+                }
+                completion(.failure(TransportForLondonError.serverMessage(error: message)))
+            case .failure:
+                completion(.failure(TransportForLondonError.apiFailure))
+            }
+        }
+    }
     
     func fetchAllTubeInformation(completion: @escaping (Result<[TrainLineModel?], TransportForLondonError>) -> Void) {
         let url = TransportForLondonAPI.tubeLineInfo.url

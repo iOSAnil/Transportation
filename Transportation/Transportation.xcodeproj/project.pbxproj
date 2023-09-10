@@ -10,8 +10,6 @@
 		002FBAB27BB00D1825876D09 /* Pods_Transportation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A18B111A2ECD41D7C3CF73E /* Pods_Transportation.framework */; };
 		1CF697C1224577D16D6473B4 /* Pods_Transportation_TransportationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D576102A07509B54C57AB /* Pods_Transportation_TransportationUITests.framework */; };
 		215D792D3428BB6A3511D31D /* Pods_TransportationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5681F4512B4332DD6747A181 /* Pods_TransportationTests.framework */; };
-		46C74C572AADC90F00BE0B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C562AADC90F00BE0B78 /* AppDelegate.swift */; };
-		46C74C592AADC90F00BE0B78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C582AADC90F00BE0B78 /* SceneDelegate.swift */; };
 		46C74C602AADC90F00BE0B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */; };
 		46C74C632AADC90F00BE0B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C612AADC90F00BE0B78 /* LaunchScreen.storyboard */; };
 		46C74C6E2AADC91000BE0B78 /* TransportationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C6D2AADC91000BE0B78 /* TransportationTests.swift */; };
@@ -36,6 +34,13 @@
 		46C74CB92AADD1D700BE0B78 /* UILabel+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB32AADD1D700BE0B78 /* UILabel+Initialize.swift */; };
 		46C74CBA2AADD1D700BE0B78 /* UIButton+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB42AADD1D700BE0B78 /* UIButton+Initialize.swift */; };
 		46C74CBB2AADD1D700BE0B78 /* UITableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */; };
+		46C74CC72AADE2C000BE0B78 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CBE2AADE2C000BE0B78 /* StationListViewModel.swift */; };
+		46C74CC82AADE2C000BE0B78 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CC02AADE2C000BE0B78 /* StationModel.swift */; };
+		46C74CC92AADE2C000BE0B78 /* StationInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CC22AADE2C000BE0B78 /* StationInformationTableViewCell.swift */; };
+		46C74CCA2AADE2C000BE0B78 /* StationListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CC42AADE2C000BE0B78 /* StationListViewState.swift */; };
+		46C74CCB2AADE2C000BE0B78 /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CC62AADE2C000BE0B78 /* StationListViewController.swift */; };
+		46C74CCF2AADE95D00BE0B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CCD2AADE95D00BE0B78 /* AppDelegate.swift */; };
+		46C74CD02AADE95D00BE0B78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CCE2AADE95D00BE0B78 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +67,6 @@
 		3C360EE3D9597E586B053336 /* Pods-TransportationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationTests.debug.xcconfig"; path = "Target Support Files/Pods-TransportationTests/Pods-TransportationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7D576102A07509B54C57AB /* Pods_Transportation_TransportationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportation_TransportationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C74C532AADC90F00BE0B78 /* Transportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46C74C562AADC90F00BE0B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46C74C582AADC90F00BE0B78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C74C622AADC90F00BE0B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46C74C642AADC90F00BE0B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +94,13 @@
 		46C74CB32AADD1D700BE0B78 /* UILabel+Initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Initialize.swift"; sourceTree = "<group>"; };
 		46C74CB42AADD1D700BE0B78 /* UIButton+Initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Initialize.swift"; sourceTree = "<group>"; };
 		46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCell.swift"; sourceTree = "<group>"; };
+		46C74CBE2AADE2C000BE0B78 /* StationListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		46C74CC02AADE2C000BE0B78 /* StationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		46C74CC22AADE2C000BE0B78 /* StationInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationInformationTableViewCell.swift; sourceTree = "<group>"; };
+		46C74CC42AADE2C000BE0B78 /* StationListViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewState.swift; sourceTree = "<group>"; };
+		46C74CC62AADE2C000BE0B78 /* StationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
+		46C74CCD2AADE95D00BE0B78 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46C74CCE2AADE95D00BE0B78 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A18B111A2ECD41D7C3CF73E /* Pods_Transportation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E35FFB26936B646CEABFD6D /* Pods-Transportation-TransportationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportation-TransportationUITests.release.xcconfig"; path = "Target Support Files/Pods-Transportation-TransportationUITests/Pods-Transportation-TransportationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5681F4512B4332DD6747A181 /* Pods_TransportationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,13 +160,12 @@
 		46C74C552AADC90F00BE0B78 /* Transportation */ = {
 			isa = PBXGroup;
 			children = (
+				46C74CCC2AADE95D00BE0B78 /* AppDelegates */,
 				46C74CAF2AADD1D700BE0B78 /* Extensions */,
 				46C74C9C2AADD14300BE0B78 /* Screens */,
 				46C74C922AADCF8B00BE0B78 /* Network */,
 				46C74C892AADCCC400BE0B78 /* Coordinator */,
 				46C74C862AADCC3B00BE0B78 /* Core */,
-				46C74C562AADC90F00BE0B78 /* AppDelegate.swift */,
-				46C74C582AADC90F00BE0B78 /* SceneDelegate.swift */,
 				46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */,
 				46C74C612AADC90F00BE0B78 /* LaunchScreen.storyboard */,
 				46C74C642AADC90F00BE0B78 /* Info.plist */,
@@ -222,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				46C74C9D2AADD14300BE0B78 /* TrainList */,
+				46C74CBC2AADE2C000BE0B78 /* StationInformation */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -289,6 +299,67 @@
 				46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46C74CBC2AADE2C000BE0B78 /* StationInformation */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CBD2AADE2C000BE0B78 /* ViewModel */,
+				46C74CBF2AADE2C000BE0B78 /* Model */,
+				46C74CC12AADE2C000BE0B78 /* TableViewCell */,
+				46C74CC32AADE2C000BE0B78 /* ViewState */,
+				46C74CC52AADE2C000BE0B78 /* ViewController */,
+			);
+			path = StationInformation;
+			sourceTree = "<group>";
+		};
+		46C74CBD2AADE2C000BE0B78 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CBE2AADE2C000BE0B78 /* StationListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46C74CBF2AADE2C000BE0B78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CC02AADE2C000BE0B78 /* StationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46C74CC12AADE2C000BE0B78 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CC22AADE2C000BE0B78 /* StationInformationTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		46C74CC32AADE2C000BE0B78 /* ViewState */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CC42AADE2C000BE0B78 /* StationListViewState.swift */,
+			);
+			path = ViewState;
+			sourceTree = "<group>";
+		};
+		46C74CC52AADE2C000BE0B78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CC62AADE2C000BE0B78 /* StationListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		46C74CCC2AADE95D00BE0B78 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CCD2AADE95D00BE0B78 /* AppDelegate.swift */,
+				46C74CCE2AADE95D00BE0B78 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 		8A2320E89C657D1ECA61AEE2 /* Pods */ = {
@@ -553,23 +624,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C74CAD2AADD14300BE0B78 /* TrainListItemViewState.swift in Sources */,
+				46C74CC72AADE2C000BE0B78 /* StationListViewModel.swift in Sources */,
 				46C74CAE2AADD14300BE0B78 /* TrainListViewController.swift in Sources */,
 				46C74C902AADCF0100BE0B78 /* Publisher.swift in Sources */,
 				46C74CBB2AADD1D700BE0B78 /* UITableView+RegisterCell.swift in Sources */,
 				46C74C882AADCC3B00BE0B78 /* Coordinator.swift in Sources */,
 				46C74CAB2AADD14300BE0B78 /* TrainInformationTableViewCell.swift in Sources */,
+				46C74CC82AADE2C000BE0B78 /* StationModel.swift in Sources */,
 				46C74CA92AADD14300BE0B78 /* TrainListViewModel.swift in Sources */,
+				46C74CCB2AADE2C000BE0B78 /* StationListViewController.swift in Sources */,
 				46C74C992AADCF8B00BE0B78 /* TubeInformationAPIHandler.swift in Sources */,
 				46C74C8B2AADCCC400BE0B78 /* AppCoordinator.swift in Sources */,
 				46C74C9B2AADD0D800BE0B78 /* TransportCoordinator.swift in Sources */,
+				46C74CCF2AADE95D00BE0B78 /* AppDelegate.swift in Sources */,
 				46C74C912AADCF0100BE0B78 /* Subscription.swift in Sources */,
 				46C74CB82AADD1D700BE0B78 /* UIViewController+UIBarButton.swift in Sources */,
+				46C74CCA2AADE2C000BE0B78 /* StationListViewState.swift in Sources */,
 				46C74CBA2AADD1D700BE0B78 /* UIButton+Initialize.swift in Sources */,
 				46C74CB92AADD1D700BE0B78 /* UILabel+Initialize.swift in Sources */,
 				46C74C972AADCF8B00BE0B78 /* TransportForLondonAPI.swift in Sources */,
 				46C74CB62AADD1D700BE0B78 /* UIView+Initiate.swift in Sources */,
-				46C74C572AADC90F00BE0B78 /* AppDelegate.swift in Sources */,
-				46C74C592AADC90F00BE0B78 /* SceneDelegate.swift in Sources */,
+				46C74CD02AADE95D00BE0B78 /* SceneDelegate.swift in Sources */,
+				46C74CC92AADE2C000BE0B78 /* StationInformationTableViewCell.swift in Sources */,
 				46C74CB72AADD1D700BE0B78 /* UIStackView+Init.swift in Sources */,
 				46C74CAA2AADD14300BE0B78 /* TrainLineModel.swift in Sources */,
 				46C74C982AADCF8B00BE0B78 /* TubeInformationAPIContext.swift in Sources */,

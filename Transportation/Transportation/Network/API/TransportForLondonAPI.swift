@@ -7,6 +7,7 @@
 
 enum TransportForLondonAPI {
     case tubeLineInfo
+    case routeInformation(lineId: String)
 
     var url: String {
         return "\(domain)\(path)?\(queryString)"
@@ -28,14 +29,19 @@ enum TransportForLondonAPI {
     }
     
     var path: String {
-        return "/Line/Mode/tube"
+        switch self {
+        case .tubeLineInfo:
+            return "/Line/Mode/tube"
+        case let .routeInformation(lineId: lineId):
+            return "/Line/\(lineId)/Route/Sequence/outbound"
+        }
     }
     
     var appId: String {
         return "com.tfl"
     }
 
-    #warning("Please donot add your production keys")
+    #warning("Please add your API key.")
     var appKey: String {
         return "130342c83ef347bd979ceea042cf2e0f"
     }
