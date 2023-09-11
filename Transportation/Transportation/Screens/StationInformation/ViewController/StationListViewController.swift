@@ -55,8 +55,9 @@ final class StationListViewController: UIViewController {
 // MARK: Create UI elements on the screen
     private func createUI() {
         view.backgroundColor = .systemBackground
-        self.title = "Station"
+        self.title = StringConstant.station.localized()
         
+        tableView.accessibilityIdentifier = AppConstant.AccessibilityIdentifier.stationListTableView.value
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(cells: [ StationInformationTableViewCell.self ])

@@ -15,6 +15,7 @@ enum StringConstant: String {
     case okText
     case lineStations
     case stations
+    case station
     
     func localized() -> String {
         return NSLocalizedString(self.rawValue, bundle: Bundle.main, comment: self.rawValue)

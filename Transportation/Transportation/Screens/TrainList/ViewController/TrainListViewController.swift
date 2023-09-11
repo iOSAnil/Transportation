@@ -57,6 +57,7 @@ final class TrainListViewController: UIViewController {
         view.backgroundColor = .systemBackground
       
         tableView = UITableView(delegate: self, dataSource: self)
+        tableView.accessibilityIdentifier = AppConstant.AccessibilityIdentifier.trainListTableView.value
         tableView.register(cells: [ TrainInformationTableViewCell.self ])
         tableView.embed(in: view, edgeInsets: .zero)
     }

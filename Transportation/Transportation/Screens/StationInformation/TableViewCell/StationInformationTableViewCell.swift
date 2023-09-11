@@ -78,6 +78,10 @@ final class StationInformationTableViewCell: UITableViewCell {
             return
         }
 
+        self.accessibilityIdentifier = configure.stationName
+        self.isAccessibilityElement = true
+        self.accessibilityTraits = UIAccessibilityTraits.button
+        
         [iconColorVerticalBar, iconColorHorizontalBar].forEach({ $0.backgroundColor = configure.color })
         trainStopName.text = configure.stationName
      }

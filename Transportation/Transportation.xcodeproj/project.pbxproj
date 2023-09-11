@@ -22,6 +22,11 @@
 		465758682AAF58C500EA85F2 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758672AAF58C500EA85F2 /* ActivityIndicatorView.swift */; };
 		4657586A2AAF59CC00EA85F2 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758692AAF59CC00EA85F2 /* String+Localized.swift */; };
 		4657586D2AAF5B7600EA85F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4657586C2AAF5B7600EA85F2 /* Localizable.strings */; };
+		465758702AAF5FF800EA85F2 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657586F2AAF5FF800EA85F2 /* XCTestCase.swift */; };
+		465758732AAF649C00EA85F2 /* TrainListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758722AAF649C00EA85F2 /* TrainListScreen.swift */; };
+		469EBE232AAEC6E400A75C32 /* StationListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469EBE222AAEC6E400A75C32 /* StationListScreen.swift */; };
+		469EBE262AAEC87E00A75C32 /* TrainListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469EBE252AAEC87E00A75C32 /* TrainListTests.swift */; };
+		469EBE282AAECB0100A75C32 /* StationListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469EBE272AAECB0100A75C32 /* StationListTests.swift */; };
 		46C74C602AADC90F00BE0B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */; };
 		46C74C632AADC90F00BE0B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C612AADC90F00BE0B78 /* LaunchScreen.storyboard */; };
 		46C74C782AADC91000BE0B78 /* TransportationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C772AADC91000BE0B78 /* TransportationUITests.swift */; };
@@ -43,7 +48,6 @@
 		46C74CB72AADD1D700BE0B78 /* UIStackView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB12AADD1D700BE0B78 /* UIStackView+Init.swift */; };
 		46C74CB82AADD1D700BE0B78 /* UIViewController+UIBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB22AADD1D700BE0B78 /* UIViewController+UIBarButton.swift */; };
 		46C74CB92AADD1D700BE0B78 /* UILabel+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB32AADD1D700BE0B78 /* UILabel+Initialize.swift */; };
-		46C74CBA2AADD1D700BE0B78 /* UIButton+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB42AADD1D700BE0B78 /* UIButton+Initialize.swift */; };
 		46C74CBB2AADD1D700BE0B78 /* UITableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */; };
 		46C74CC72AADE2C000BE0B78 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CBE2AADE2C000BE0B78 /* StationListViewModel.swift */; };
 		46C74CC82AADE2C000BE0B78 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CC02AADE2C000BE0B78 /* StationModel.swift */; };
@@ -97,6 +101,11 @@
 		465758672AAF58C500EA85F2 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		465758692AAF59CC00EA85F2 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		4657586C2AAF5B7600EA85F2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4657586F2AAF5FF800EA85F2 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		465758722AAF649C00EA85F2 /* TrainListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListScreen.swift; sourceTree = "<group>"; };
+		469EBE222AAEC6E400A75C32 /* StationListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListScreen.swift; sourceTree = "<group>"; };
+		469EBE252AAEC87E00A75C32 /* TrainListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListTests.swift; sourceTree = "<group>"; };
+		469EBE272AAECB0100A75C32 /* StationListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListTests.swift; sourceTree = "<group>"; };
 		46C74C532AADC90F00BE0B78 /* Transportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C74C622AADC90F00BE0B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +131,6 @@
 		46C74CB12AADD1D700BE0B78 /* UIStackView+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Init.swift"; sourceTree = "<group>"; };
 		46C74CB22AADD1D700BE0B78 /* UIViewController+UIBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIBarButton.swift"; sourceTree = "<group>"; };
 		46C74CB32AADD1D700BE0B78 /* UILabel+Initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Initialize.swift"; sourceTree = "<group>"; };
-		46C74CB42AADD1D700BE0B78 /* UIButton+Initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Initialize.swift"; sourceTree = "<group>"; };
 		46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCell.swift"; sourceTree = "<group>"; };
 		46C74CBE2AADE2C000BE0B78 /* StationListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
 		46C74CC02AADE2C000BE0B78 /* StationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
@@ -220,6 +228,32 @@
 			path = Localized;
 			sourceTree = "<group>";
 		};
+		4657586E2AAF5FF100EA85F2 /* Extension  */ = {
+			isa = PBXGroup;
+			children = (
+				4657586F2AAF5FF800EA85F2 /* XCTestCase.swift */,
+			);
+			path = "Extension ";
+			sourceTree = "<group>";
+		};
+		465758712AAF647C00EA85F2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				465758722AAF649C00EA85F2 /* TrainListScreen.swift */,
+				469EBE222AAEC6E400A75C32 /* StationListScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		469EBE242AAEC86900A75C32 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				469EBE252AAEC87E00A75C32 /* TrainListTests.swift */,
+				469EBE272AAECB0100A75C32 /* StationListTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		46C74C4A2AADC90F00BE0B78 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +310,9 @@
 		46C74C762AADC91000BE0B78 /* TransportationUITests */ = {
 			isa = PBXGroup;
 			children = (
+				469EBE242AAEC86900A75C32 /* Tests */,
+				465758712AAF647C00EA85F2 /* Screens */,
+				4657586E2AAF5FF100EA85F2 /* Extension  */,
 				46C74C772AADC91000BE0B78 /* TransportationUITests.swift */,
 				46C74C792AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift */,
 			);
@@ -389,7 +426,6 @@
 				46C74CB12AADD1D700BE0B78 /* UIStackView+Init.swift */,
 				46C74CB22AADD1D700BE0B78 /* UIViewController+UIBarButton.swift */,
 				46C74CB32AADD1D700BE0B78 /* UILabel+Initialize.swift */,
-				46C74CB42AADD1D700BE0B78 /* UIButton+Initialize.swift */,
 				46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */,
 				465758692AAF59CC00EA85F2 /* String+Localized.swift */,
 			);
@@ -759,7 +795,6 @@
 				46C74C912AADCF0100BE0B78 /* Subscription.swift in Sources */,
 				46C74CB82AADD1D700BE0B78 /* UIViewController+UIBarButton.swift in Sources */,
 				46C74CCA2AADE2C000BE0B78 /* StationListViewState.swift in Sources */,
-				46C74CBA2AADD1D700BE0B78 /* UIButton+Initialize.swift in Sources */,
 				46C74CB92AADD1D700BE0B78 /* UILabel+Initialize.swift in Sources */,
 				46C74C972AADCF8B00BE0B78 /* TransportForLondonAPI.swift in Sources */,
 				46C74CB62AADD1D700BE0B78 /* UIView+Initiate.swift in Sources */,
@@ -798,7 +833,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469EBE282AAECB0100A75C32 /* StationListTests.swift in Sources */,
 				46C74C7A2AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift in Sources */,
+				469EBE232AAEC6E400A75C32 /* StationListScreen.swift in Sources */,
+				465758702AAF5FF800EA85F2 /* XCTestCase.swift in Sources */,
+				469EBE262AAEC87E00A75C32 /* TrainListTests.swift in Sources */,
+				465758732AAF649C00EA85F2 /* TrainListScreen.swift in Sources */,
 				46C74C782AADC91000BE0B78 /* TransportationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

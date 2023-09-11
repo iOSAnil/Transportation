@@ -33,4 +33,18 @@ enum AppConstant {
             return self.rawValue
         }
     }
+    
+    enum AccessibilityIdentifier {
+        case trainListTableView
+        case stationListTableView
+        
+        var value: String {
+            switch self {
+            case .trainListTableView:
+                return "TrainListTableView"
+            case .stationListTableView:
+                return "StationListTableView"
+            }
+        }
+    }
 }

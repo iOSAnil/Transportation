@@ -42,8 +42,7 @@ final class TrainInformationTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         contentView.addSubview(iconColorView)
         contentView.addSubview(tubeInformationStackView)
-        tubeInformationStackView.addArrangedSubview(tubeLineName)
-        tubeInformationStackView.addArrangedSubview(tubeServicesInformationStackView)
+        tubeInformationStackView.addArrangedSubviews(tubeLineName, tubeServicesInformationStackView)
         self.activateConstraints()
     }
     
@@ -79,6 +78,10 @@ final class TrainInformationTableViewCell: UITableViewCell {
         }
         tubeServicesInformationStackView.removeAllArrangedSubviews()
         
+        self.accessibilityIdentifier = configure.tubeLineName
+        self.isAccessibilityElement = true
+        self.accessibilityTraits = UIAccessibilityTraits.button
+
         tubeLineName.text = configure.tubeLineName
         let services = configure.services
         iconColorView.backgroundColor = configure.color
