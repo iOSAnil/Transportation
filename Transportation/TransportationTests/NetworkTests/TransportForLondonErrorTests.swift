@@ -20,12 +20,12 @@ final class TransportForLondonErrorTests: XCTestCase {
 
     func testAPIFailureErrorMessage() throws {
         let api = TransportForLondonError.apiFailure
-        XCTAssertEqual(api.message, "Something went wrong. Please try again later")
+        XCTAssertEqual(api.message, StringConstant.errorMessage.localized())
     }
 
     func testParseErrorMessage() throws {
         let api = TransportForLondonError.parseError
-        XCTAssertEqual(api.message, "Something went wrong. Please try again later")
+        XCTAssertEqual(api.message, StringConstant.errorMessage.localized())
     }
 
     func testAPIFailureServerMessage() throws {

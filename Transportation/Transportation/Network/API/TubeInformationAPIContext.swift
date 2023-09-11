@@ -66,7 +66,7 @@ enum TransportForLondonError: Error {
     var message: String {
         switch self {
         case .apiFailure, .parseError:
-            return "Something went wrong. Please try again later"
+            return StringConstant.errorMessage.localized()
         case let .serverMessage(error: errorMessage):
             return errorMessage
         case .inCorrectURL:

@@ -18,6 +18,10 @@
 		465758612AAF302F00EA85F2 /* TrainInformationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657585B2AAF302F00EA85F2 /* TrainInformationModelTests.swift */; };
 		465758622AAF302F00EA85F2 /* TrainListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657585C2AAF302F00EA85F2 /* TrainListViewModelTests.swift */; };
 		465758632AAF302F00EA85F2 /* TrainListItemViewStateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657585D2AAF302F00EA85F2 /* TrainListItemViewStateTest.swift */; };
+		465758662AAF567600EA85F2 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758652AAF567600EA85F2 /* AppConstant.swift */; };
+		465758682AAF58C500EA85F2 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758672AAF58C500EA85F2 /* ActivityIndicatorView.swift */; };
+		4657586A2AAF59CC00EA85F2 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758692AAF59CC00EA85F2 /* String+Localized.swift */; };
+		4657586D2AAF5B7600EA85F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4657586C2AAF5B7600EA85F2 /* Localizable.strings */; };
 		46C74C602AADC90F00BE0B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */; };
 		46C74C632AADC90F00BE0B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C612AADC90F00BE0B78 /* LaunchScreen.storyboard */; };
 		46C74C782AADC91000BE0B78 /* TransportationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C772AADC91000BE0B78 /* TransportationUITests.swift */; };
@@ -89,6 +93,10 @@
 		4657585B2AAF302F00EA85F2 /* TrainInformationModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInformationModelTests.swift; sourceTree = "<group>"; };
 		4657585C2AAF302F00EA85F2 /* TrainListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListViewModelTests.swift; sourceTree = "<group>"; };
 		4657585D2AAF302F00EA85F2 /* TrainListItemViewStateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListItemViewStateTest.swift; sourceTree = "<group>"; };
+		465758652AAF567600EA85F2 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		465758672AAF58C500EA85F2 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		465758692AAF59CC00EA85F2 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		4657586C2AAF5B7600EA85F2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		46C74C532AADC90F00BE0B78 /* Transportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C74C622AADC90F00BE0B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -196,6 +204,22 @@
 			path = TransportationTests/TrainModel;
 			sourceTree = SOURCE_ROOT;
 		};
+		465758642AAF566D00EA85F2 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				465758652AAF567600EA85F2 /* AppConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		4657586B2AAF5B6C00EA85F2 /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				4657586C2AAF5B7600EA85F2 /* Localizable.strings */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
 		46C74C4A2AADC90F00BE0B78 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +245,8 @@
 		46C74C552AADC90F00BE0B78 /* Transportation */ = {
 			isa = PBXGroup;
 			children = (
+				4657586B2AAF5B6C00EA85F2 /* Localized */,
+				465758642AAF566D00EA85F2 /* Constant */,
 				46C74CCC2AADE95D00BE0B78 /* AppDelegates */,
 				46C74CAF2AADD1D700BE0B78 /* Extensions */,
 				46C74C9C2AADD14300BE0B78 /* Screens */,
@@ -259,6 +285,7 @@
 		46C74C862AADCC3B00BE0B78 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				465758672AAF58C500EA85F2 /* ActivityIndicatorView.swift */,
 				46C74C872AADCC3B00BE0B78 /* Coordinator.swift */,
 				46C74C8E2AADCF0100BE0B78 /* Publisher.swift */,
 				46C74C8F2AADCF0100BE0B78 /* Subscription.swift */,
@@ -364,6 +391,7 @@
 				46C74CB32AADD1D700BE0B78 /* UILabel+Initialize.swift */,
 				46C74CB42AADD1D700BE0B78 /* UIButton+Initialize.swift */,
 				46C74CB52AADD1D700BE0B78 /* UITableView+RegisterCell.swift */,
+				465758692AAF59CC00EA85F2 /* String+Localized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -582,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C74C632AADC90F00BE0B78 /* LaunchScreen.storyboard in Resources */,
+				4657586D2AAF5B7600EA85F2 /* Localizable.strings in Resources */,
 				46C74C602AADC90F00BE0B78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,7 +764,10 @@
 				46C74C972AADCF8B00BE0B78 /* TransportForLondonAPI.swift in Sources */,
 				46C74CB62AADD1D700BE0B78 /* UIView+Initiate.swift in Sources */,
 				46C74CD02AADE95D00BE0B78 /* SceneDelegate.swift in Sources */,
+				465758662AAF567600EA85F2 /* AppConstant.swift in Sources */,
+				4657586A2AAF59CC00EA85F2 /* String+Localized.swift in Sources */,
 				46C74CC92AADE2C000BE0B78 /* StationInformationTableViewCell.swift in Sources */,
+				465758682AAF58C500EA85F2 /* ActivityIndicatorView.swift in Sources */,
 				46C74CB72AADD1D700BE0B78 /* UIStackView+Init.swift in Sources */,
 				46C74CAA2AADD14300BE0B78 /* TrainLineModel.swift in Sources */,
 				46C74C982AADCF8B00BE0B78 /* TubeInformationAPIContext.swift in Sources */,

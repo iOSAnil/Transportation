@@ -57,7 +57,7 @@ final class StationListViewModelTests: XCTestCase {
         viewModel?.dispatch(event: .screenAppear)
         _ = viewModel?.publisher.subscribe(publishImmediately: true, { viewState in
             if case let .error(message) = viewState {
-                XCTAssertEqual(message, "something went wrong")
+                XCTAssertEqual(message, StringConstant.errorMessage.localized())
             }
         })
     }
@@ -73,7 +73,7 @@ final class StationListViewModelTests: XCTestCase {
 
     func testErrorReceivedEvent() throws {
         navigationDelegate.reset()
-        viewModel?.dispatch(event: .errorReceived("Something went wrong"))
+        viewModel?.dispatch(event: .errorReceived(StringConstant.errorMessage.localized()))
         _ = viewModel?.publisher.subscribe(publishImmediately: true, { [weak self] _ in
             let value = self?.navigationDelegate.error ?? false
             XCTAssertTrue(value)
@@ -84,7 +84,7 @@ final class StationListViewModelTests: XCTestCase {
         setTestType(.failure)
         viewModel?.dispatch(event: .screenAppear)
         _ = viewModel?.publisher.subscribe(publishImmediately: true, { viewState in
-            XCTAssertEqual(viewState, StationListViewState.error(message: "Something went wrong. Please try again later"))
+            XCTAssertEqual(viewState, StationListViewState.error(message: StringConstant.errorMessage.localized()))
         })
     }
 
@@ -92,7 +92,7 @@ final class StationListViewModelTests: XCTestCase {
         setTestType(.failure, lineId: "%")
         viewModel?.dispatch(event: .screenAppear)
         _ = viewModel?.publisher.subscribe(publishImmediately: true, { viewState in
-            XCTAssertEqual(viewState, StationListViewState.error(message: "Something went wrong. Please try again later"))
+            XCTAssertEqual(viewState, StationListViewState.error(message: StringConstant.errorMessage.localized()))
         })
     }
 }

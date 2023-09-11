@@ -48,7 +48,7 @@ final class StationListViewModel {
             switch result {
             case let .success(model):
                 guard let model = model else {
-                    self?.publisher.value = .error(message: "something went wrong")
+                    self?.publisher.value = .error(message: StringConstant.errorMessage.localized())
                     return
                 }
                 if let message = model.message {

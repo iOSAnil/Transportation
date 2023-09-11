@@ -48,8 +48,10 @@ final class TransportCoordinator: Coordinator, TransportNavigationFlowHandler {
     }
     
     private func showAlertScreen(_ message: String) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
+        let alert = UIAlertController(title:  StringConstant.errorTitle.localized(),
+                                      message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: StringConstant.okText.localized(),
+                                      style: .default, handler: { [weak self] _ in
             self?.rootNavigationController.popViewController(animated: true)
         }))
         rootNavigationController.topViewController?.present(alert, animated: true, completion: nil)

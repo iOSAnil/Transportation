@@ -63,7 +63,7 @@ final class StationListViewStateTest: XCTestCase {
     }
 
     func testErrorMessageNotEqual() {
-        let lhs = StationListViewState.error(message: "something went wrong")
+        let lhs = StationListViewState.error(message: StringConstant.errorMessage.localized())
         let rhs = StationListViewState.error(message: "Api failed")
         XCTAssertNotEqual(lhs, rhs)
     }

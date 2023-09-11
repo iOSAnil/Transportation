@@ -20,9 +20,9 @@ struct StationList {
     
     init(model: StationModel) {
         if let lineName = model.lineName {
-            self.lineName = "\(lineName) Line Stations"
+            self.lineName = String(format: StringConstant.lineStations.localized(), lineName)
         } else {
-            self.lineName = "Stations"
+            self.lineName = StringConstant.stations.localized()
         }
         items = model.stations?.compactMap({ StationItemViewState(tubeModel: $0, id: model.lineId)   }) ?? []
     }

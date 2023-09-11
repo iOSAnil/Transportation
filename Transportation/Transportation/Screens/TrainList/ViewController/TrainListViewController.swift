@@ -53,7 +53,7 @@ final class TrainListViewController: UIViewController {
     
     // MARK: Create UI elements on the screen
     private func createUI() {
-        self.title = "Trains"
+        self.title = StringConstant.trains.localized()
         view.backgroundColor = .systemBackground
       
         tableView = UITableView(delegate: self, dataSource: self)
