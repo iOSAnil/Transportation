@@ -9,23 +9,18 @@ import UIKit
 import Foundation
 
 final class StationInformationTableViewCell: UITableViewCell {
-    private let labelPaddingTopAndBottom: CGFloat = -4
-
-    private lazy var iconColorVerticalBar = UIView.autoLayout()
+    private var iconColorVerticalBar = UIView.autoLayout()
     
-    private lazy var iconColorHorizontalBar = UIView.autoLayout()
+    private var iconColorHorizontalBar = UIView.autoLayout()
     
-    private lazy var trainStopName: UILabel = {
-        let label = UILabel(font: .systemFont(ofSize: 18))
-        label.numberOfLines = 0
-        return label
-    }()
+    private var trainStopName = UILabel(font: .systemFont(ofSize: 18),
+                                             multiline: true)
     
-    private lazy var tubeInformationStackView: UIStackView = {
-        return UIStackView(distribution: .fill, alignment: .leading, axis: .vertical, spacing: 4)
-    }()
+    private var tubeInformationStackView = UIStackView(distribution: .fill,
+                                                       alignment: .leading,
+                                                       axis: .vertical,
+                                                       spacing: 4)
      
-    
     var configure: StationItemViewState? {
         didSet {
            updateCellData()

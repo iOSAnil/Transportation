@@ -20,12 +20,3 @@ struct TrainLineModel: Decodable {
 struct ServiceType: Decodable {
     let name: String?
 }
-
-extension TrainLineModel {
-    static var mockList: [TrainLineModel] {
-        return [
-            TrainLineModel(type: "", id: "bakerloo", name: "Bakerloo", modeName: "", serviceTypes: [ServiceType(name: "Regular")]),
-            TrainLineModel(type: "", id: "jubilee", name: "Jubilee", modeName: "", serviceTypes: [ServiceType(name: "Regular"), ServiceType(name: "Night")])
-        ]
-    }
-}

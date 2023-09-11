@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class StationListViewController: UIViewController, Identifiable {
+final class StationListViewController: UIViewController {
     private var tableView: UITableView
     private var subscription: Subscription<StationListViewState>?
     private var dataSource: [StationItemViewState] = []
@@ -46,6 +46,7 @@ final class StationListViewController: UIViewController, Identifiable {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        subscription?.stop()
         subscription = nil
         super.viewWillDisappear(animated)
     }

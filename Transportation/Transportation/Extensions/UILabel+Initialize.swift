@@ -8,9 +8,10 @@
 import UIKit
 
 extension UILabel {
-    convenience init(font: UIFont) {
+    convenience init(font: UIFont, multiline: Bool = false) {
         self.init(autoLayout: true)
         self.font = font
+        self.numberOfLines = multiline ? 0 : 1
     }
     
     func transformToPillShape() {

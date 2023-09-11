@@ -10,9 +10,16 @@
 		002FBAB27BB00D1825876D09 /* Pods_Transportation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A18B111A2ECD41D7C3CF73E /* Pods_Transportation.framework */; };
 		1CF697C1224577D16D6473B4 /* Pods_Transportation_TransportationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D576102A07509B54C57AB /* Pods_Transportation_TransportationUITests.framework */; };
 		215D792D3428BB6A3511D31D /* Pods_TransportationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5681F4512B4332DD6747A181 /* Pods_TransportationTests.framework */; };
+		4657584F2AAF2A1600EA85F2 /* MockTubeInformationAPIContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657584E2AAF2A1600EA85F2 /* MockTubeInformationAPIContext.swift */; };
+		465758532AAF2B5600EA85F2 /* MockTransportNavigationFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758522AAF2B5600EA85F2 /* MockTransportNavigationFlowHandler.swift */; };
+		4657585E2AAF302F00EA85F2 /* StationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758572AAF302F00EA85F2 /* StationListViewModelTests.swift */; };
+		4657585F2AAF302F00EA85F2 /* StationListViewStateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758582AAF302F00EA85F2 /* StationListViewStateTest.swift */; };
+		465758602AAF302F00EA85F2 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465758592AAF302F00EA85F2 /* SubscriptionTests.swift */; };
+		465758612AAF302F00EA85F2 /* TrainInformationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657585B2AAF302F00EA85F2 /* TrainInformationModelTests.swift */; };
+		465758622AAF302F00EA85F2 /* TrainListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657585C2AAF302F00EA85F2 /* TrainListViewModelTests.swift */; };
+		465758632AAF302F00EA85F2 /* TrainListItemViewStateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657585D2AAF302F00EA85F2 /* TrainListItemViewStateTest.swift */; };
 		46C74C602AADC90F00BE0B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */; };
 		46C74C632AADC90F00BE0B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C612AADC90F00BE0B78 /* LaunchScreen.storyboard */; };
-		46C74C6E2AADC91000BE0B78 /* TransportationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C6D2AADC91000BE0B78 /* TransportationTests.swift */; };
 		46C74C782AADC91000BE0B78 /* TransportationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C772AADC91000BE0B78 /* TransportationUITests.swift */; };
 		46C74C7A2AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C792AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift */; };
 		46C74C882AADCC3B00BE0B78 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C872AADCC3B00BE0B78 /* Coordinator.swift */; };
@@ -41,6 +48,14 @@
 		46C74CCB2AADE2C000BE0B78 /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CC62AADE2C000BE0B78 /* StationListViewController.swift */; };
 		46C74CCF2AADE95D00BE0B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CCD2AADE95D00BE0B78 /* AppDelegate.swift */; };
 		46C74CD02AADE95D00BE0B78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CCE2AADE95D00BE0B78 /* SceneDelegate.swift */; };
+		46C74CD32AADED2E00BE0B78 /* NetworkAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CD22AADED2E00BE0B78 /* NetworkAPITest.swift */; };
+		46C74CD52AADF13400BE0B78 /* TransportForLondonErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CD42AADF13400BE0B78 /* TransportForLondonErrorTests.swift */; };
+		46C74CD72AADF3FC00BE0B78 /* TubeInformationAPIContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CD62AADF3FC00BE0B78 /* TubeInformationAPIContextTests.swift */; };
+		46C74CDA2AADF88500BE0B78 /* TrainList.json in Resources */ = {isa = PBXBuildFile; fileRef = 46C74CD92AADF88500BE0B78 /* TrainList.json */; };
+		46C74CDC2AAE07BC00BE0B78 /* victoria.json in Resources */ = {isa = PBXBuildFile; fileRef = 46C74CDB2AAE07BC00BE0B78 /* victoria.json */; };
+		46C74CDE2AAE15F400BE0B78 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CDD2AAE15F400BE0B78 /* NetworkManager.swift */; };
+		46C74CE02AAE2C7300BE0B78 /* DecoableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CDF2AAE2C7300BE0B78 /* DecoableTests.swift */; };
+		46C74CE22AAE2CBD00BE0B78 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74CE12AAE2CBD00BE0B78 /* NetworkManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +81,19 @@
 		19EA9DBCF424B652E00A7A89 /* Pods-Transportation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportation.debug.xcconfig"; path = "Target Support Files/Pods-Transportation/Pods-Transportation.debug.xcconfig"; sourceTree = "<group>"; };
 		3C360EE3D9597E586B053336 /* Pods-TransportationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportationTests.debug.xcconfig"; path = "Target Support Files/Pods-TransportationTests/Pods-TransportationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7D576102A07509B54C57AB /* Pods_Transportation_TransportationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportation_TransportationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4657584E2AAF2A1600EA85F2 /* MockTubeInformationAPIContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTubeInformationAPIContext.swift; sourceTree = "<group>"; };
+		465758522AAF2B5600EA85F2 /* MockTransportNavigationFlowHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTransportNavigationFlowHandler.swift; sourceTree = "<group>"; };
+		465758572AAF302F00EA85F2 /* StationListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewModelTests.swift; sourceTree = "<group>"; };
+		465758582AAF302F00EA85F2 /* StationListViewStateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewStateTest.swift; sourceTree = "<group>"; };
+		465758592AAF302F00EA85F2 /* SubscriptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
+		4657585B2AAF302F00EA85F2 /* TrainInformationModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainInformationModelTests.swift; sourceTree = "<group>"; };
+		4657585C2AAF302F00EA85F2 /* TrainListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListViewModelTests.swift; sourceTree = "<group>"; };
+		4657585D2AAF302F00EA85F2 /* TrainListItemViewStateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListItemViewStateTest.swift; sourceTree = "<group>"; };
 		46C74C532AADC90F00BE0B78 /* Transportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C74C622AADC90F00BE0B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46C74C642AADC90F00BE0B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C74C692AADC91000BE0B78 /* TransportationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46C74C6D2AADC91000BE0B78 /* TransportationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationTests.swift; sourceTree = "<group>"; };
 		46C74C732AADC91000BE0B78 /* TransportationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C74C772AADC91000BE0B78 /* TransportationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationUITests.swift; sourceTree = "<group>"; };
 		46C74C792AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -101,6 +123,14 @@
 		46C74CC62AADE2C000BE0B78 /* StationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
 		46C74CCD2AADE95D00BE0B78 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C74CCE2AADE95D00BE0B78 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46C74CD22AADED2E00BE0B78 /* NetworkAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPITest.swift; sourceTree = "<group>"; };
+		46C74CD42AADF13400BE0B78 /* TransportForLondonErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportForLondonErrorTests.swift; sourceTree = "<group>"; };
+		46C74CD62AADF3FC00BE0B78 /* TubeInformationAPIContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeInformationAPIContextTests.swift; sourceTree = "<group>"; };
+		46C74CD92AADF88500BE0B78 /* TrainList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TrainList.json; sourceTree = "<group>"; };
+		46C74CDB2AAE07BC00BE0B78 /* victoria.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = victoria.json; sourceTree = "<group>"; };
+		46C74CDD2AAE15F400BE0B78 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		46C74CDF2AAE2C7300BE0B78 /* DecoableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoableTests.swift; sourceTree = "<group>"; };
+		46C74CE12AAE2CBD00BE0B78 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		4A18B111A2ECD41D7C3CF73E /* Pods_Transportation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E35FFB26936B646CEABFD6D /* Pods-Transportation-TransportationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportation-TransportationUITests.release.xcconfig"; path = "Target Support Files/Pods-Transportation-TransportationUITests/Pods-Transportation-TransportationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5681F4512B4332DD6747A181 /* Pods_TransportationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +165,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4657584D2AAF2A0700EA85F2 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				465758522AAF2B5600EA85F2 /* MockTransportNavigationFlowHandler.swift */,
+				4657584E2AAF2A1600EA85F2 /* MockTubeInformationAPIContext.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		465758562AAF302F00EA85F2 /* StationModel */ = {
+			isa = PBXGroup;
+			children = (
+				465758572AAF302F00EA85F2 /* StationListViewModelTests.swift */,
+				465758582AAF302F00EA85F2 /* StationListViewStateTest.swift */,
+				465758592AAF302F00EA85F2 /* SubscriptionTests.swift */,
+			);
+			name = StationModel;
+			path = TransportationTests/StationModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		4657585A2AAF302F00EA85F2 /* TrainModel */ = {
+			isa = PBXGroup;
+			children = (
+				4657585B2AAF302F00EA85F2 /* TrainInformationModelTests.swift */,
+				4657585C2AAF302F00EA85F2 /* TrainListViewModelTests.swift */,
+				4657585D2AAF302F00EA85F2 /* TrainListItemViewStateTest.swift */,
+			);
+			name = TrainModel;
+			path = TransportationTests/TrainModel;
+			sourceTree = SOURCE_ROOT;
+		};
 		46C74C4A2AADC90F00BE0B78 = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +237,12 @@
 		46C74C6C2AADC91000BE0B78 /* TransportationTests */ = {
 			isa = PBXGroup;
 			children = (
-				46C74C6D2AADC91000BE0B78 /* TransportationTests.swift */,
+				46C74CD82AADF88500BE0B78 /* MockResponses */,
+				4657584D2AAF2A0700EA85F2 /* Mock */,
+				465758562AAF302F00EA85F2 /* StationModel */,
+				4657585A2AAF302F00EA85F2 /* TrainModel */,
+				46C74CD12AADED1900BE0B78 /* NetworkTests */,
+				46C74CDF2AAE2C7300BE0B78 /* DecoableTests.swift */,
 			);
 			path = TransportationTests;
 			sourceTree = "<group>";
@@ -223,6 +289,7 @@
 				46C74C942AADCF8B00BE0B78 /* TransportForLondonAPI.swift */,
 				46C74C952AADCF8B00BE0B78 /* TubeInformationAPIContext.swift */,
 				46C74C962AADCF8B00BE0B78 /* TubeInformationAPIHandler.swift */,
+				46C74CDD2AAE15F400BE0B78 /* NetworkManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -360,6 +427,26 @@
 				46C74CCE2AADE95D00BE0B78 /* SceneDelegate.swift */,
 			);
 			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		46C74CD12AADED1900BE0B78 /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CD42AADF13400BE0B78 /* TransportForLondonErrorTests.swift */,
+				46C74CD22AADED2E00BE0B78 /* NetworkAPITest.swift */,
+				46C74CD62AADF3FC00BE0B78 /* TubeInformationAPIContextTests.swift */,
+				46C74CE12AAE2CBD00BE0B78 /* NetworkManagerTests.swift */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
+		46C74CD82AADF88500BE0B78 /* MockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				46C74CD92AADF88500BE0B78 /* TrainList.json */,
+				46C74CDB2AAE07BC00BE0B78 /* victoria.json */,
+			);
+			path = MockResponses;
 			sourceTree = "<group>";
 		};
 		8A2320E89C657D1ECA61AEE2 /* Pods */ = {
@@ -503,6 +590,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C74CDC2AAE07BC00BE0B78 /* victoria.json in Resources */,
+				46C74CDA2AADF88500BE0B78 /* TrainList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +712,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C74CDE2AAE15F400BE0B78 /* NetworkManager.swift in Sources */,
 				46C74CAD2AADD14300BE0B78 /* TrainListItemViewState.swift in Sources */,
 				46C74CC72AADE2C000BE0B78 /* StationListViewModel.swift in Sources */,
 				46C74CAE2AADD14300BE0B78 /* TrainListViewController.swift in Sources */,
@@ -656,7 +746,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C74C6E2AADC91000BE0B78 /* TransportationTests.swift in Sources */,
+				46C74CE22AAE2CBD00BE0B78 /* NetworkManagerTests.swift in Sources */,
+				465758632AAF302F00EA85F2 /* TrainListItemViewStateTest.swift in Sources */,
+				465758622AAF302F00EA85F2 /* TrainListViewModelTests.swift in Sources */,
+				4657584F2AAF2A1600EA85F2 /* MockTubeInformationAPIContext.swift in Sources */,
+				4657585F2AAF302F00EA85F2 /* StationListViewStateTest.swift in Sources */,
+				465758612AAF302F00EA85F2 /* TrainInformationModelTests.swift in Sources */,
+				465758532AAF2B5600EA85F2 /* MockTransportNavigationFlowHandler.swift in Sources */,
+				46C74CD32AADED2E00BE0B78 /* NetworkAPITest.swift in Sources */,
+				46C74CD52AADF13400BE0B78 /* TransportForLondonErrorTests.swift in Sources */,
+				465758602AAF302F00EA85F2 /* SubscriptionTests.swift in Sources */,
+				46C74CD72AADF3FC00BE0B78 /* TubeInformationAPIContextTests.swift in Sources */,
+				46C74CE02AAE2C7300BE0B78 /* DecoableTests.swift in Sources */,
+				4657585E2AAF302F00EA85F2 /* StationListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

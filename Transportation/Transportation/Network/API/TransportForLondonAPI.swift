@@ -10,7 +10,11 @@ enum TransportForLondonAPI {
     case routeInformation(lineId: String)
 
     var url: String {
-        return "\(domain)\(path)?\(queryString)"
+        return "\(baseURL)?\(queryString)"
+    }
+    
+    var baseURL: String {
+        return "\(domain)\(path)"
     }
     
     var queryString: String {
@@ -41,7 +45,7 @@ enum TransportForLondonAPI {
         return "com.tfl"
     }
 
-    #warning("Please add your API key.")
+    #warning("Please add your demo API key only. Prod key should be injected in the app bundle")
     var appKey: String {
         return "130342c83ef347bd979ceea042cf2e0f"
     }

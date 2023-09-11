@@ -17,10 +17,6 @@ final class Publisher<T> {
     }
     
     private var subscriptions = NSHashTable<Subscription<T>>.weakObjects()
-    
-    public var hasSubscriptions: Bool {
-        return subscriptions.allObjects.isEmpty == false
-    }
 
     public init(value: T) {
         self.value = value

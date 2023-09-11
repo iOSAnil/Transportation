@@ -44,7 +44,7 @@ final class TrainListViewModel {
      }
     
     private func fetchTubeLinesData() {
-        apiHandler.fetchAllTubeInformation { [weak self] result in
+        apiHandler.fetchAllTubeInformation(url: TransportForLondonAPI.tubeLineInfo.url) { [weak self] result in
             switch result {
             case let .success(model):
                 let list = model.compactMap({$0})

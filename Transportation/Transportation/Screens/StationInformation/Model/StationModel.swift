@@ -21,12 +21,3 @@ struct Station: Decodable {
     let modes: [String]?
     let zone: String?
 }
-
-extension Station {
-    static var mockList: [Station] {
-        return [
-            Station(name: "Bermondsey Underground Station", modes: ["bus", "train"], zone: "2"),
-            Station(name: "Stratford Underground Station", modes: ["bus", "train"], zone: "2")
-        ]
-    }
-}

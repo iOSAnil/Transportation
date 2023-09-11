@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TubeInformationAPIHandler {
-    func fetchAllTubeInformation(completion: @escaping (Result<[TrainLineModel?], TransportForLondonError>) -> Void)
+    func fetchAllTubeInformation(url: String, completion: @escaping (Result<[TrainLineModel?], TransportForLondonError>) -> Void)
     func fetchTrainStationInformation(lineId: String,
-                                      completion: @escaping (Result<StationModel, TransportForLondonError>) -> Void)
+                                      completion: @escaping (Result<StationModel?, TransportForLondonError>) -> Void)
 }

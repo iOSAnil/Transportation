@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TrainListViewController: UIViewController, Identifiable {
+final class TrainListViewController: UIViewController {
     private var tableView: UITableView
     private let viewModel: TrainListViewModel
     var subscription: Subscription<TrainListItemViewState>?
@@ -46,6 +46,7 @@ final class TrainListViewController: UIViewController, Identifiable {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        subscription?.stop()
         subscription = nil
         super.viewWillDisappear(animated)
     }

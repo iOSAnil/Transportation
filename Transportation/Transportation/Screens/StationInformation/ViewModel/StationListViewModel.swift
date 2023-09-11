@@ -22,7 +22,9 @@ final class StationListViewModel {
         case errorReceived(String)
     }
 
-    init(apiHandler: TubeInformationAPIHandler, lineId: String, navigationDelegate: TransportNavigationFlowHandler?) {
+    init(apiHandler: TubeInformationAPIHandler,
+         lineId: String,
+         navigationDelegate: TransportNavigationFlowHandler?) {
         publisher = Publisher(value: StationListViewModel.initialValue)
         self.apiHandler = apiHandler
         self.lineId = lineId
@@ -45,7 +47,15 @@ final class StationListViewModel {
         apiHandler.fetchTrainStationInformation(lineId: lineId, completion: { [weak self] result in
             switch result {
             case let .success(model):
-                self?.publisher.value = .load(StationList(model: model))
+                guard let model = model else {
+                    self?.publisher.value = .error(message: "something went wrong")
+                    return
+                }
+                if let message = model.message {
+                    self?.publisher.value = .error(message: message)
+                } else {
+                    self?.publisher.value = .load(StationList(model: model))
+                }
             case let .failure(error):
                 self?.publisher.value = .error(message: error.message)
             }

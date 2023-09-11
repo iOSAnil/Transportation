@@ -29,8 +29,8 @@ struct StationList {
 }
 
 struct StationItemViewState {
-    var stationName: String?
-    var color: UIColor
+    let stationName: String?
+    let color: UIColor
 
     init(tubeModel: Station, id: String?) {
         self.stationName = tubeModel.name
