@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Transportation
+
+  Created by Anil Kothari on 11/09/23.
+  
+*/
+
+"trains"          = "Trains";
+"services"        = "Services:";
+"errorMessage"    = "Something went wrong. Please try again later";
+"errorTitle"      = "Error";
+"okText"          = "Ok";
+"lineStations"    = "%@ Line Stations";
+"stations"        = "Stations";
+"station"         = "Station";
