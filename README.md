@@ -7,25 +7,29 @@ Transportation is an innovative iOS mobile app meticulously crafted to showcase 
 
 - [Installation](#installation)
 - [Technology](#technology)
+- [Architecture](#architecture)
 - [Features](#features)
-- [License](#License)
-- [Documentation](#Documentation)
+- [License](#license)
 - [Author Information](#author-information)
-- [Feedback](#Feedback)
+- [Feedback](#feedback)
 
 ## Installation
 
 To install this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/iOSAnil/Transportation.git`
-2. Navigate to the project directory: `cd your-project`
-3. Install dependencies: `pod install`
+1. open terminal. `mkdir folder_name`
+2. Clone the repository: `git clone https://github.com/iOSAnil/Transportation.git`
+3. Navigate to the project directory: `cd Transportation/Transportation/`
+4. Install dependencies: `pod install`
 
 ## Technology
 
 - Swift with MVVM+Coordinator design pattern
 - XCUnit test cases for functional testing 
 - XCUITestCases for UI/Automation testing 
+
+## Architecture
+ For detailed documentation, visit our [ArchitecturePage](/Architecture.md).
 
 ## Features
 
@@ -36,20 +40,18 @@ To install this project, follow these steps:
 
 This project is licensed under the [General](LICENSE).
 
-## Documentation
-
-For detailed documentation, visit our [Documentation Page](docs/README.md).
-
 ## Author Information
 
 - Name: Anil Kothari
 - Email: anil_mait@rocketmail.com
 - GitHub: [github.com/iOSAnil](https://github.com/iOSAnil)
+- Medium: [medium.com/@anil0605](https://medium.com/@anil0605) 
 
 ## Tools
 
 - Xcode 14.2
 - Swift 5
+- iOS 16.2
 
 ## Feedback
 
