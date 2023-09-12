@@ -12,26 +12,26 @@ enum TransportForLondonAPI {
     var url: String {
         return "\(baseURL)?\(queryString)"
     }
-    
+
     var baseURL: String {
         return "\(domain)\(path)"
     }
-    
+
     var queryString: String {
         let keyValuePairs = ["app_id": appId,
                              "app_key": appKey]
-        
+
         let queryString = (keyValuePairs.compactMap({ (key, value) -> String in
             return "\(key)=\(value)"
         }) as Array).joined(separator: "&")
-        
+
         return queryString
     }
-    
+
     var domain: String {
         return "https://api.tfl.gov.uk"
     }
-    
+
     var path: String {
         switch self {
         case .tubeLineInfo:
@@ -40,12 +40,12 @@ enum TransportForLondonAPI {
             return "/Line/\(lineId)/Route/Sequence/outbound"
         }
     }
-    
+
     var appId: String {
         return "com.tfl"
     }
 
-    #warning("Please add your demo API key only. Prod key should be injected in the app bundle")
+    #warning("This is demo API key only. Prod key should be injected in the app bundle by the CI/CD server during runtime")
     var appKey: String {
         return "130342c83ef347bd979ceea042cf2e0f"
     }

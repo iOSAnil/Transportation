@@ -12,21 +12,21 @@ final class TrainInformationTableViewCell: UITableViewCell {
     typealias Spacing = AppConstant.Spacing
     typealias Font = AppConstant.Font
     typealias Anchor = AppConstant.Anchor
-        
+
     private var iconColorView = UIView.autoLayout()
-    
+
     private var tubeLineName = UILabel(font: .systemFont(ofSize: Font.big.value))
-    
+
     private var tubeInformationStackView = UIStackView(distribution: .fill,
                                                        alignment: .leading,
                                                        axis: .vertical,
                                                        spacing: Spacing.standard.rawValue)
-    
+
     private var tubeServicesInformationStackView = UIStackView(distribution: .fill,
                                                                alignment: .leading,
                                                                axis: .horizontal,
                                                                spacing: Spacing.standard.rawValue)
-    
+
     private static let barTopSpacer: CGFloat = 1
     private static let barBottomSpacer: CGFloat = 1
     private static let iconColorViewWidth: CGFloat = 8
@@ -36,7 +36,7 @@ final class TrainInformationTableViewCell: UITableViewCell {
             updateCellData()
         }
     }
-    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
@@ -45,16 +45,16 @@ final class TrainInformationTableViewCell: UITableViewCell {
         tubeInformationStackView.addArrangedSubviews(tubeLineName, tubeServicesInformationStackView)
         self.activateConstraints()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         tubeServicesInformationStackView.removeAllArrangedSubviews()
     }
-    
+
     private func activateConstraints() {
         NSLayoutConstraint.activate([
             iconColorView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
@@ -63,21 +63,21 @@ final class TrainInformationTableViewCell: UITableViewCell {
             iconColorView.topAnchor.constraint(equalTo: contentView.topAnchor,
                                                constant: TrainInformationTableViewCell.barTopSpacer),
             iconColorView.widthAnchor.constraint(equalToConstant: TrainInformationTableViewCell.iconColorViewWidth),
-            
+
             tubeInformationStackView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: Anchor.standard.value),
             tubeInformationStackView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor),
             tubeInformationStackView.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor),
-            tubeInformationStackView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor),
-            
+            tubeInformationStackView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor)
+
         ])
     }
-    
+
     private func updateCellData() {
         guard let configure = configure else {
             return
         }
         tubeServicesInformationStackView.removeAllArrangedSubviews()
-        
+
         self.accessibilityIdentifier = configure.tubeLineName
         self.isAccessibilityElement = true
         self.accessibilityTraits = UIAccessibilityTraits.button
@@ -85,14 +85,12 @@ final class TrainInformationTableViewCell: UITableViewCell {
         tubeLineName.text = configure.tubeLineName
         let services = configure.services
         iconColorView.backgroundColor = configure.color
-        
-        if services.isEmpty {
-            return
-        }
+
+        if services.isEmpty { return }
         let label = UILabel(font: .systemFont(ofSize: Font.medium.value))
         label.text = StringConstant.services.localized()
         tubeServicesInformationStackView.addArrangedSubview(label)
-        
+
         for serviceType in services {
             let label = UILabel(font: .systemFont(ofSize: Font.medium.value))
             label.text = serviceType

@@ -26,7 +26,3 @@ final class StationListTests: XCTestCase {
        stationListScreen.verifyUI()
     }
 }
-
-
-
-

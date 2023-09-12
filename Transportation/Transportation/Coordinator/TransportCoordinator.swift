@@ -38,13 +38,13 @@ final class TransportCoordinator: Coordinator, TransportNavigationFlowHandler {
     func showTrainListScreen() {
         let model = TrainListViewModel(apiHandler: apiHandler, navigationDelegate: self)
         let viewController = TrainListViewController(viewModel: model)
-        rootNavigationController.pushViewController(viewController, animated: false)
+        show(viewController, animated: false)
     }
     
     func showTrainInformationScreen(lineId: String) {
         let viewModel = StationListViewModel(apiHandler: apiHandler, lineId: lineId, navigationDelegate: self)
         let viewController = StationListViewController(viewModel: viewModel)
-        rootNavigationController.pushViewController(viewController, animated: true)
+        show(viewController, animated: true)
     }
     
     private func showAlertScreen(_ message: String) {
@@ -52,7 +52,9 @@ final class TransportCoordinator: Coordinator, TransportNavigationFlowHandler {
                                       message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: StringConstant.okText.localized(),
                                       style: .default, handler: { [weak self] _ in
-            self?.rootNavigationController.popViewController(animated: true)
+            if self?.rootNavigationController.viewControllers.count ?? 0 > 2 {
+                self?.rootNavigationController.popViewController(animated: true)
+            }
         }))
         rootNavigationController.topViewController?.present(alert, animated: true, completion: nil)
     }

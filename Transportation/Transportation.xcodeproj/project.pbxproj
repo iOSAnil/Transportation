@@ -29,8 +29,6 @@
 		469EBE282AAECB0100A75C32 /* StationListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469EBE272AAECB0100A75C32 /* StationListTests.swift */; };
 		46C74C602AADC90F00BE0B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C5F2AADC90F00BE0B78 /* Assets.xcassets */; };
 		46C74C632AADC90F00BE0B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C74C612AADC90F00BE0B78 /* LaunchScreen.storyboard */; };
-		46C74C782AADC91000BE0B78 /* TransportationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C772AADC91000BE0B78 /* TransportationUITests.swift */; };
-		46C74C7A2AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C792AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift */; };
 		46C74C882AADCC3B00BE0B78 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C872AADCC3B00BE0B78 /* Coordinator.swift */; };
 		46C74C8B2AADCCC400BE0B78 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C8A2AADCCC400BE0B78 /* AppCoordinator.swift */; };
 		46C74C902AADCF0100BE0B78 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C74C8E2AADCF0100BE0B78 /* Publisher.swift */; };
@@ -112,8 +110,6 @@
 		46C74C642AADC90F00BE0B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C74C692AADC91000BE0B78 /* TransportationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C74C732AADC91000BE0B78 /* TransportationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46C74C772AADC91000BE0B78 /* TransportationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationUITests.swift; sourceTree = "<group>"; };
-		46C74C792AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46C74C872AADCC3B00BE0B78 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		46C74C8A2AADCCC400BE0B78 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		46C74C8E2AADCF0100BE0B78 /* Publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
@@ -313,8 +309,6 @@
 				469EBE242AAEC86900A75C32 /* Tests */,
 				465758712AAF647C00EA85F2 /* Screens */,
 				4657586E2AAF5FF100EA85F2 /* Extension  */,
-				46C74C772AADC91000BE0B78 /* TransportationUITests.swift */,
-				46C74C792AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift */,
 			);
 			path = TransportationUITests;
 			sourceTree = "<group>";
@@ -834,12 +828,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				469EBE282AAECB0100A75C32 /* StationListTests.swift in Sources */,
-				46C74C7A2AADC91000BE0B78 /* TransportationUITestsLaunchTests.swift in Sources */,
 				469EBE232AAEC6E400A75C32 /* StationListScreen.swift in Sources */,
 				465758702AAF5FF800EA85F2 /* XCTestCase.swift in Sources */,
 				469EBE262AAEC87E00A75C32 /* TrainListTests.swift in Sources */,
 				465758732AAF649C00EA85F2 /* TrainListScreen.swift in Sources */,
-				46C74C782AADC91000BE0B78 /* TransportationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

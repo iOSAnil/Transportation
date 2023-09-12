@@ -13,9 +13,8 @@ public extension XCTestCase {
         waitForElementToBeHittable(element, timeout: timeout)
         element.tap()
     }
-    
-    
-    func waitThenAssertExists(_ element: XCUIElement, timeout: Int = 30) {
+
+    func waitThenAssertExists(_ element: XCUIElement, timeout: Int = 60) {
         var iCounter = 1
         while iCounter < timeout {
             if element.exists {
@@ -26,13 +25,13 @@ public extension XCTestCase {
                 print("Element \(element) not shows up..")
             }
         }
-        
-        if (iCounter == timeout) {
+
+        if iCounter == timeout {
             XCTFail("Element \(element) not shows up within \(timeout) seconds.")
         }
     }
-     
-    func waitForElementToBeHittable(_ element: XCUIElement, timeout: Int = 60) {
+
+    private func waitForElementToBeHittable(_ element: XCUIElement, timeout: Int = 60) {
         var iCounter = 1
         while iCounter < timeout {
             if element.exists && element.isHittable {
@@ -43,21 +42,16 @@ public extension XCTestCase {
                 print("Element \(element) not shown or isHittable yet")
             }
         }
-        
-        if (iCounter == timeout) {
+
+        if iCounter == timeout {
             XCTFail("Element \(element) either not shows up or hittable within \(timeout) seconds.")
         }
     }
-    
-    func letAppSettle(_ timeInterval: TimeInterval = 1.0) {
-        Thread.sleep(forTimeInterval: timeInterval)
-    }
 }
-
 
 class BaseScreen: XCTestCase {
     let app = XCUIApplication()
-    
+
     func verifyUIElement(_ element: XCUIElement) {
         if !element.exists {
             XCTFail("Element \(element) is missing")
