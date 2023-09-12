@@ -10,7 +10,7 @@ MVVM + Coordinator + ViewStates
 
 - Model: Response decodable model objects
 - View(or ViewController): ViewController embedded with a view, handling UI events received from UI elements and dispatch the events to ViewModel. ViewController registered the viewModel publishers and render the UI with the latest ViewState.
-- ViewModel: Handling the triggered events from viewController. Call APIContext (injected from coordinator), received response, convert to ViewStates and publish with the help of publisher. 
+- ViewModel: Handling the triggered events from viewController. Call APIContext (injected from coordinator), received response and publish with the help of publisher. 
 
 Best practices:
 
